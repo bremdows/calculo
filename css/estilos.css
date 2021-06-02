@@ -1,0 +1,23 @@
+*:before,
+*:after,
+*{
+	box-sizing:  inherit;
+}
+
+html{
+	box-sizing:  border-box;
+	font-size:  62.5% /* * AHORA 1rem is equal to 10px */ ;
+}
+
+body{
+	font: normal 16px "Open Sans", Arial, Helvetica, Sans-serif;
+}
+
+.main .contenido{
+	display:  flex;
+	flex-wrap:  wrap;
+	justify-content: space-between;
+}
+.main .contenido article{
+	flex: 0 0 calc( 33.3% - 2rem);
+}
