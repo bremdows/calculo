@@ -2,11 +2,11 @@
 document.addEventListener('DOMContentLoaded', () => {
 	console.log("El documento esta listo para ejecutar código JS");
 
-	agregarBlank();
+	generarContenido();
 
 })
 
-function agregarBlank(){
+function generarContenido(){
 	let enlaces,
 		contador; 
 	enlaces = document.querySelectorAll("a");
@@ -16,6 +16,5 @@ function agregarBlank(){
 		enlace.setAttribute("target", "_blank");
 	});
 
-	console.log(contador)
-
+	console.log(contador);
 }
